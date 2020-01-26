@@ -1,4 +1,7 @@
 #### Detox
+
+npm i -g detox-cli
+
 No package.json, linha 79 substituir nome do emulador por algum disponivel.
 
 Tem dois scrips no package.json, um para buildar o projeto na versão de teste e outro para rodar os testes
