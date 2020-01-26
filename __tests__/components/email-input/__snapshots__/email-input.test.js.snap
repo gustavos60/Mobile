@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`email-input tests renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderColor": "gray",
+        "borderRadius": 10,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "margin": 10,
+        "width": 600,
+      },
+      Object {
+        "borderColor": "gray",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "gray",
+          "fontSize": 30,
+        },
+        Object {
+          "marginLeft": 10,
+        },
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    autoCompleteType="email"
+    keyboardType="email-address"
+    onChangeText={[MockFunction]}
+    placeholder="Email"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "flex": 1,
+        "fontSize": 18,
+        "padding": 10,
+      }
+    }
+    testID=""
+    underlineColorAndroid="transparent"
+    value=""
+  />
+</View>
+`;

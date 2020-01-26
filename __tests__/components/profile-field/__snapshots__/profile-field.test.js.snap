@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileField tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "marginBottom": 5,
+      }
+    }
+  >
+    Nome
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+      }
+    }
+  >
+    Gustavo
+  </Text>
+</View>
+`;

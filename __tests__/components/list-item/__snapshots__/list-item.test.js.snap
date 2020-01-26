@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem tests renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 100,
+      "marginBottom": 10,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 10,
+        "height": "90%",
+        "marginRight": 10,
+        "width": "30%",
+      }
+    }
+  />
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+          "marginBottom": 5,
+          "overflow": "visible",
+        }
+      }
+    >
+      Gustavo
+    </Text>
+    <Text
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      Latitude:
+       
+      11
+    </Text>
+    <Text
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      Longitude:
+       
+      22
+    </Text>
+  </View>
+</View>
+`;
