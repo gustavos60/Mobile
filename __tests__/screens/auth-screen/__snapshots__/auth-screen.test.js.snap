@@ -95,7 +95,7 @@ exports[`AuthScreen tests renders correctly 1`] = `
         }
         testID="emailInput"
         underlineColorAndroid="transparent"
-        value="eve.holt@reqres.in"
+        value=""
       />
     </View>
     <View
@@ -153,7 +153,7 @@ exports[`AuthScreen tests renders correctly 1`] = `
         }
         testID="passwordInput"
         underlineColorAndroid="transparent"
-        value="123213123"
+        value=""
       />
       <Text
         allowFontScaling={false}
