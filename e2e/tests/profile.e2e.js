@@ -3,7 +3,7 @@ const {
   by,
   // device,
   element,
-  // waitFor,
+  waitFor,
 } = require('detox');
 
 describe('Profile screen', () => {
@@ -30,10 +30,20 @@ describe('Profile screen', () => {
     const nameInput = element(by.id('profileNameInput'));
     const jobInput = element(by.id('profileJobInput'));
     const countryInput = element(by.id('profileCountryInput'));
+    const updateButton = element(by.id('profileUpdateButton'));
+    const editButton = element(by.id('profileEditButton'));
+
     await nameInput.typeText('Eve Holt\n');
+
+    await waitFor(jobInput).toBeVisible().withTimeout(5000);
     await jobInput.typeText('Software Developer\n');
+
+    await waitFor(countryInput).toBeVisible().withTimeout(5000);
     await countryInput.typeText('Spain\n');
-    await element(by.id('profileUpdateButton')).tap();
-    await expect(element(by.id('profileEditButton')));
+
+    await waitFor(updateButton).toBeVisible().withTimeout(5000);
+    await updateButton.tap();
+
+    await expect(editButton).toBeVisible();
   });
 });
