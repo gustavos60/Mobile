@@ -44,6 +44,7 @@ describe('Profile screen', () => {
     await waitFor(updateButton).toBeVisible().withTimeout(5000);
     await updateButton.tap();
 
+    await waitFor(editButton).toBeVisible().withTimeout(5000);
     await expect(editButton).toBeVisible();
   });
 });
