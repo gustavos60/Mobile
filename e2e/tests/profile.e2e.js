@@ -6,6 +6,8 @@ const {
   waitFor,
 } = require('detox');
 
+const TIMEOUT = 10000;
+
 describe('Profile screen', () => {
   it('should navigate to profile screen', async () => {
     const profileTabIcon = element(by.id('profileTabIcon'));
@@ -35,16 +37,16 @@ describe('Profile screen', () => {
 
     await nameInput.typeText('Eve Holt\n');
 
-    await waitFor(jobInput).toBeVisible().withTimeout(5000);
+    await waitFor(jobInput).toBeVisible().withTimeout(TIMEOUT);
     await jobInput.typeText('Software Developer\n');
 
-    await waitFor(countryInput).toBeVisible().withTimeout(5000);
+    await waitFor(countryInput).toBeVisible().withTimeout(TIMEOUT);
     await countryInput.typeText('Spain\n');
 
-    await waitFor(updateButton).toBeVisible().withTimeout(5000);
+    await waitFor(updateButton).toBeVisible().withTimeout(TIMEOUT);
     await updateButton.tap();
 
-    await waitFor(editButton).toBeVisible().withTimeout(5000);
+    await waitFor(editButton).toBeVisible().withTimeout(TIMEOUT);
     await expect(editButton).toBeVisible();
   });
 });
