@@ -33,7 +33,6 @@ describe('Profile screen', () => {
     const jobInput = element(by.id('profileJobInput'));
     const countryInput = element(by.id('profileCountryInput'));
     const updateButton = element(by.id('profileUpdateButton'));
-    const editButton = element(by.id('profileEditButton'));
 
     await nameInput.typeText('Eve Holt\n');
 
@@ -46,7 +45,6 @@ describe('Profile screen', () => {
     await waitFor(updateButton).toBeVisible().withTimeout(TIMEOUT);
     await updateButton.tap();
 
-    await waitFor(editButton).toBeVisible().withTimeout(TIMEOUT);
-    await expect(editButton).toBeVisible();
+    await expect(element(by.id('profileHeader'))).toBeVisible();
   });
 });
