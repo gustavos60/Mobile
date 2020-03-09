@@ -87,6 +87,14 @@
         "device": {
           "avdName": "pixel"
         }
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/Mobile.app",
+        "build": "xcodebuild -workspace ios/Mobile.xcworkspace -scheme Mobile -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11"
+        }
       }
     },
     "test-runner": "jest"
