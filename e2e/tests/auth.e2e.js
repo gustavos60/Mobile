@@ -60,6 +60,6 @@ describe('Auth screen', () => {
     await passwordInput.replaceText('123456\n');
     await waitFor(loginButton).toBeVisible().withTimeout(3000);
     await loginButton.tap();
-    await expect(element(by.id('mapHeader'))).toBeVisible();
+    await expect(element(by.id('listHeader'))).toBeVisible();
   });
 });

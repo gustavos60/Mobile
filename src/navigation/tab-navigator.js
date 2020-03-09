@@ -11,8 +11,8 @@ import ProfileScreen from '../screens/profile-screen';
 import colors from '../colors';
 
 const TabNavigator = createBottomTabNavigator({
-  Map: MapScreen,
   List: ListScreen,
+  Map: MapScreen,
   Profile: ProfileScreen,
 }, {
   defaultNavigationOptions: ({ navigation }) => ({
